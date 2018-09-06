@@ -1,7 +1,15 @@
 #include "test_framework/generic_test.h"
-short Parity(unsigned long long x) {
-  // TODO - you fill in here.
-  return 0;
+short Parity(unsigned long long x)
+{
+	short result = 0;
+	while (x)
+	{
+		// clears the least significant bit set
+		x &= x - 1;
+		result ^= 1;
+	}
+
+	return result;
 }
 
 int main(int argc, char* argv[]) {
