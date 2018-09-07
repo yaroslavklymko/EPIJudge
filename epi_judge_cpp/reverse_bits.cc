@@ -1,7 +1,14 @@
 #include "test_framework/generic_test.h"
-unsigned long long ReverseBits(unsigned long long x) {
-  // TODO - you fill in here.
-  return 0;
+
+unsigned long long ReverseBits(unsigned long long x)
+{
+	const short size = sizeof(long long) * 8;
+	for (short i = 0; i < size >> 1; ++i)
+	{
+		const long long diff = ((x >> i) & 1) ^ ((x >> (size - i - 1)) & 1);
+		x ^= (diff << i) | (diff << (size - i - 1));
+	}
+	return x;
 }
 
 int main(int argc, char* argv[]) {
