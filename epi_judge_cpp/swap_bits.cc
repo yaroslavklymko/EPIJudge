@@ -1,7 +1,11 @@
 #include "test_framework/generic_test.h"
-long long SwapBits(long long x, int i, int j) {
-  // TODO - you fill in here.
-  return 0;
+
+long long SwapBits(long long x, int i, int j)
+{
+	assert(i >= 0 && j >= 0 && i < sizeof(long long) * 8 && j < sizeof(long long) * 8);
+	const long long diff = ((x >> i) & 1) ^ ((x >> j) & 1);
+	x ^= (diff << i) | (diff << j);
+	return x;
 }
 
 int main(int argc, char* argv[]) {
