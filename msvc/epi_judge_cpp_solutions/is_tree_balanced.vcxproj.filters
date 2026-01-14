@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\work\EPI\EPIJudge\epi_judge_cpp_solutions\is_tree_balanced.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\EPI\EPIJudge\epi_judge_cpp_solutions\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E76FBA11-7B4A-3D94-8C9E-E31282D3E5E7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

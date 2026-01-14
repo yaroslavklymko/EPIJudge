@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\work\EPI\EPIJudge\epi_judge_cpp\delete_node_from_list.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\EPI\EPIJudge\epi_judge_cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{05BB49D5-891B-3385-AFDE-A8C3C8403B34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
