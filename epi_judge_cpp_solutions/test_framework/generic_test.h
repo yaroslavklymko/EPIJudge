@@ -8,6 +8,7 @@
 #include <streambuf>
 #include <string>
 #include <vector>
+#include <filesystem>
 
 #include "fmt_print.h"
 #include "generic_test_handler.h"
@@ -34,6 +35,7 @@ int GenericTestMain(
     Function test_func, Comparator comparator,
     const std::vector<std::string>& param_names,
     const std::function<void(TestConfig&)>& program_config = {}) {
+  std::filesystem::current_path("..\\..\\EPIJudge");
   std::ifstream config_data(GetFilePathInJudgeDir("config.json"));
   json config_override;
   config_data >> config_override;
